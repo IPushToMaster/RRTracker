@@ -1,0 +1,40 @@
+<div id="top-bar">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <div class="site-brand">
+          <img src="http://www.logomakerapp.com/images/logo.png" class="brand">
+        </div>
+      </div>
+      <div class="col-sm-8 search-area">
+        <div class="search-bar">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <input class="input-text search-input" type="text" name="TopSearch" data-toggle="tooltip" placeholder="Enter A Player Name">
+        </div>
+      </div>
+      <div class="col-sm-2 text-center d-none d-md-block d-lg-block social">
+        <%= link_to root_path do %>
+          <i class="fab fa-facebook"></i>
+        <% end %>
+        <%= link_to root_path do %>
+          <i class="fab fa-twitter"></i>
+        <% end %>
+        <%= link_to root_path do %>
+          <i class="fab fa-instagram"></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <nav class="navigation justify-content-center d-none d-md-block d-lg-block">
+    <div class="container">
+      <ul class="main-nav">
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'About', about_path %></li>
+        <li><%= link_to 'Contact', contact_path %></li>
+        <li><%= link_to 'Log In', contact_path %></li>
+      </ul>
+    </div>
+  </nav>
+</div>
