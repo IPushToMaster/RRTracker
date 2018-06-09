@@ -19,7 +19,7 @@
 // Colors
 
 #top-bar {
-  background: transparent;
+  background: #38393D;
   padding: 15px;
   position: absolute;
   top: 0;
@@ -58,6 +58,12 @@
   border-left: none;
   border-right: none;
   border-bottom: 1px solid white;
+  transition: 0.3s all ease;
+}
+
+.search-bar .search-input:focus, .search-input:focus .search-icon i  {
+  background: #fff;
+  color: #000;
 }
 
 
@@ -94,7 +100,7 @@
 
   a:link, a:visited {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
     text-transform: uppercase;
     padding: 8px;
     font-weight: bold;
@@ -121,7 +127,7 @@
 ul.main-nav  {
   margin: 0;
   padding-left: 0;
-  text-align: center;
+  text-align: right;
   list-style-type: none;
     li {
       display: inline;
@@ -130,14 +136,16 @@ ul.main-nav  {
         color: #fff;
         font-size: 14px;
         text-transform: uppercase;
-        padding: 0 22px;
+        padding: 10px 22px;
         font-weight: bold;
         transition: 0.2s all ease;
       }
-      a:hover, a:focus, a:active {
+      a:hover, a:active, a:focus {
+        background: rgba(155,155,155,0.5);
+        border-bottom: 2px solid #fff;
         color: deepskyblue;
         text-decoration: none;
-       }
+      }
     }
 }
 
@@ -146,7 +154,7 @@ ul.main-nav  {
 // Content Area
 
 .main-content {
-  padding-top: 250px;
+  padding-top: 150px;
 }
 
 .site-bg {

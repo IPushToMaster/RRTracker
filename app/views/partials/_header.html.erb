@@ -1,5 +1,15 @@
 <div id="top-bar">
   <div class="container">
+    <nav class="navigation justify-content-center d-none d-md-block d-lg-block">
+      <div class="container">
+        <ul class="main-nav">
+          <li><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'About', about_path %></li>
+          <li><%= link_to 'Contact', contact_path %></li>
+          <li><%= link_to 'Sign In', new_user_session_path %></li>
+        </ul>
+      </div>
+    </nav>
     <div class="row">
       <div class="col-sm-2">
         <div class="site-brand">
@@ -8,10 +18,10 @@
       </div>
       <div class="col-sm-8 search-area">
         <div class="search-bar">
+          <input class="input-text search-input" type="text" name="TopSearch" data-toggle="tooltip" placeholder="Enter A Player Name">
           <div class="search-icon">
             <i class="fas fa-search"></i>
           </div>
-          <input class="input-text search-input" type="text" name="TopSearch" data-toggle="tooltip" placeholder="Enter A Player Name">
         </div>
       </div>
       <div class="col-sm-2 text-center d-none d-md-block d-lg-block social">
@@ -27,14 +37,4 @@
       </div>
     </div>
   </div>
-  <nav class="navigation justify-content-center d-none d-md-block d-lg-block">
-    <div class="container">
-      <ul class="main-nav">
-        <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'About', about_path %></li>
-        <li><%= link_to 'Contact', contact_path %></li>
-        <li><%= link_to 'Log In', contact_path %></li>
-      </ul>
-    </div>
-  </nav>
 </div>
